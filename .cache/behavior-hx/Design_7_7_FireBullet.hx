@@ -75,6 +75,36 @@ class Design_7_7_FireBullet extends ActorScript
 	public var _Fired:Bool;
 	public var _YOffset:Float;
 	public var _XOffset:Float;
+	public function _customEvent_whenThisHearstrigger():Void
+	{
+		if(_Fired)
+		{
+			if(!(_BulletCreated.isAlive()))
+			{
+				_CanFire = false;
+				_Fired = true;
+				createRecycledActor(bullet, (actor.getXCenter() + _XOffset), (actor.getYCenter() + _YOffset), Script.BACK);
+				_BulletCreated = getLastCreatedActor();
+				getLastCreatedActor().setX((getLastCreatedActor().getX() - ((getLastCreatedActor().getWidth()) / 2)));
+				getLastCreatedActor().setY((getLastCreatedActor().getY() - ((getLastCreatedActor().getHeight()) / 2)));
+				getLastCreatedActor().setAngle(Utils.RAD * ((((Utils.DEG * actor.getAngle()) + shooterangle) - bulletangle)));
+				getLastCreatedActor().setVelocity((((Utils.DEG * actor.getAngle()) + shooterangle) - 180), speed);
+				playSound(sound);
+			}
+		}
+		else
+		{
+			_CanFire = false;
+			_Fired = true;
+			createRecycledActor(bullet, actor.getXCenter(), actor.getYCenter(), Script.MIDDLE);
+			_BulletCreated = getLastCreatedActor();
+			getLastCreatedActor().setX((getLastCreatedActor().getX() - ((getLastCreatedActor().getWidth()) / 2)));
+			getLastCreatedActor().setY((getLastCreatedActor().getY() - ((getLastCreatedActor().getHeight()) / 2)));
+			getLastCreatedActor().setAngle(Utils.RAD * ((((Utils.DEG * actor.getAngle()) + shooterangle) - bulletangle)));
+			getLastCreatedActor().setVelocity((((Utils.DEG * actor.getAngle()) + shooterangle) - 180), speed);
+			playSound(sound);
+		}
+	}
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
@@ -111,6 +141,11 @@ class Design_7_7_FireBullet extends ActorScript
 	
 	override public function forwardMessage(msg:String)
 	{
+		if(msg == ("_customEvent_" + trigger))
+		{
+			_customEvent_whenThisHearstrigger();
+			return;
+		}
 		
 	}
 }
