@@ -5,7 +5,15 @@
 <pages>
 <page id="0" file="font-25.png"/>
 </pages>
-<chars count="1">
+<chars count="9">
 <char id="32" x="0" y="0" width="0" height="0" xoffset="0" yoffset="23" xadvance="4" page="0" chnl="0"/>
+<char character=" " id="32" x="720" y="1" width="142" height="123" xoffset="0" yoffset="0" padding="0" xadvance="142" page="0" chnl="0"/>
+<char character="A" id="65" x="0" y="0" width="142" height="123" xoffset="0" yoffset="0" padding="0" xadvance="142" page="0" chnl="0"/>
+<char character="B" id="66" x="142" y="0" width="142" height="123" xoffset="0" yoffset="0" padding="0" xadvance="142" page="0" chnl="0"/>
+<char character="C" id="67" x="285" y="0" width="142" height="123" xoffset="0" yoffset="0" padding="0" xadvance="142" page="0" chnl="0"/>
+<char character="D" id="68" x="427" y="0" width="142" height="123" xoffset="0" yoffset="0" padding="0" xadvance="142" page="0" chnl="0"/>
+<char character="E" id="69" x="855" y="0" width="142" height="123" xoffset="0" yoffset="0" padding="0" xadvance="142" page="0" chnl="0"/>
+<char character="F" id="70" x="997" y="0" width="142" height="123" xoffset="0" yoffset="0" padding="0" xadvance="142" page="0" chnl="0"/>
+<char character="," id="44" x="1062" y="172" width="142" height="123" xoffset="0" yoffset="0" padding="0" xadvance="142" page="0" chnl="0"/>
 </chars>
 </font>
