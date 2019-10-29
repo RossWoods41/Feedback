@@ -63,16 +63,39 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 class ActorEvents_1 extends ActorScript
 {
+	public var _ExplosionForce:Float;
+	public var _ExplosionForceofSecondActors:Float;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
+		nameMap.set("Explosion Force", "_ExplosionForce");
+		_ExplosionForce = 1.0;
+		nameMap.set("Explosion Force of Second Actors", "_ExplosionForceofSecondActors");
+		_ExplosionForceofSecondActors = 0.7;
 		
 	}
 	
 	override public function init()
 	{
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if(((Engine.engine.getGameAttribute("Health") : Float) == 0))
+				{
+					playSound(getSound(15));
+					createRecycledActor(getActorType(11), (actor.getX() + (actor.getWidth()/2)), (actor.getY() + (actor.getHeight()/2)), Script.FRONT);
+					getLastCreatedActor().applyImpulseInDirection(randomInt(1, 360), _ExplosionForce);
+					createRecycledActor(getActorType(13), (actor.getX() + (actor.getWidth()/2)), (actor.getY() + (actor.getHeight()/2)), Script.FRONT);
+					getLastCreatedActor().applyImpulseInDirection(randomInt(1, 360), _ExplosionForceofSecondActors);
+					recycleActor(actor);
+				}
+			}
+		});
 		
 	}
 	

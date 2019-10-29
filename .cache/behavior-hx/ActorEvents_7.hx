@@ -43,7 +43,6 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
-import box2D.collision.shapes.B2Shape;
 
 import com.stencyl.graphics.shaders.BasicShader;
 import com.stencyl.graphics.shaders.GrayscaleShader;
@@ -62,75 +61,18 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_1 extends SceneScript
+class ActorEvents_7 extends ActorScript
 {
 	
 	
-	public function new(dummy:Int, dummy2:Engine)
+	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
-		super();
+		super(actor);
 		
 	}
 	
 	override public function init()
 	{
-		
-		/* ======================== When Creating ========================= */
-		Engine.engine.setGameAttribute("Health", 3);
-		Engine.engine.setGameAttribute("Score", 0);
-		
-		/* ========================= When Drawing ========================= */
-		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				g.setFont(getFont(25));
-				g.strokeColor = Utils.getColorRGB(0,0,0);
-				g.drawString("" + "Health:", 10, 450);
-				g.drawString("" + "Score:", 515, 450);
-				Script.setDrawingLayerToActorLayer(getActor(1));
-			}
-		});
-		
-		/* =========================== Keyboard =========================== */
-		addKeyStateListener("hit", function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && pressed)
-			{
-				Engine.engine.setGameAttribute("Health", ((Engine.engine.getGameAttribute("Health") : Float) - 1));
-			}
-		});
-		
-		/* =========================== Keyboard =========================== */
-		addKeyStateListener("exit", function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && pressed)
-			{
-				switchScene(GameModel.get().scenes.get(2).getID(), createFadeOut(1, Utils.getColorRGB(0,0,0)), createFadeIn(1, Utils.getColorRGB(0,0,0)));
-			}
-		});
-		
-		/* ======================== When Updating ========================= */
-		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				if(((Engine.engine.getGameAttribute("Health") : Float) == 2))
-				{
-					getActor(33).setAnimation("2/3");
-					getActor(1).setAnimation("Damaged");
-				}
-				else if(((Engine.engine.getGameAttribute("Health") : Float) == 1))
-				{
-					getActor(33).setAnimation("1/3");
-					getActor(1).setAnimation("Destroyed");
-				}
-				else if(((Engine.engine.getGameAttribute("Health") : Float) == 0))
-				{
-					getActor(33).setAnimation("Empty");
-				}
-			}
-		});
 		
 	}
 	
