@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
+    <font alphabet="" atlasID="0" desc="" height="1" id="25" name="8 Bit" offsets="" oid="-1" prerendered="true" readable="false" rowHeight="1" shared="false"/>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="-1" fixedrot="true" fric="0.2" gid="4" id="7" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Alien Cruiser" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="8" static="false">
         <snippets>
             <s enabled="true" id="0">
@@ -82,6 +83,28 @@
             <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="15" fixedrot="false" fric="0.2" gid="3" id="21" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="B_Play" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="22" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="22" name="B_Play" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Unhover" numframes="1" originx="128" originy="32" sync="false" version="2" width="256">
+            <poly data="4,0,0,256,0,256,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="55" id="1" loop="true" name="Hover" numframes="1" originx="120" originy="27" sync="false" version="2" width="240">
+            <poly data="4,0,0,240,0,240,55,0,55" density="0.1" fric="0.2" gid="-1000" id="0" name="Hover" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="16" fixedrot="false" fric="0.2" gid="3" id="23" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="B_Quit" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="24" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="24" name="B_Quit" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Unhover" numframes="1" originx="128" originy="32" sync="false" version="2" width="256">
+            <poly data="4,0,0,256,0,256,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="55" id="1" loop="true" name="Hover" numframes="1" originx="120" originy="27" sync="false" version="2" width="240">
+            <poly data="4,0,0,240,0,240,55,0,55" density="0.1" fric="0.2" gid="-1000" id="0" name="Hover" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="18" name="Desert Background" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <tileset across="1" atlasID="0" desc="" down="2" id="17" name="Desert Ground" oid="-1" readable="false" shared="false" th="32" tw="32">
         <tile collision="-1" data="" durations="100" frames="0" id="0" order="-1"/>
@@ -89,6 +112,14 @@
     </tileset>
     <music atlasID="0" desc="" id="15" loop="true" name="Explode" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <music atlasID="0" desc="" id="16" loop="true" name="Fire" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="14" fixedrot="false" fric="0.2" gid="3" id="19" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Menu_Title" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="20" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="20" name="Menu_Title" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="128" id="0" loop="true" name="Animation 0" numframes="1" originx="160" originy="64" sync="false" version="2" width="320">
+            <poly data="4,0,0,320,0,320,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="-1" fixedrot="false" fric="0.2" gid="3" id="11" ignoreg="false" inertia="0.01" ldamp="0.0" mass="0.1" name="Particle" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="12" static="false">
         <snippets>
             <s enabled="true" id="8">
@@ -121,7 +152,7 @@
             <poly data="4,0,0,17,0,17,23,0,23" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="-1" fixedrot="true" fric="0.2" gid="3" id="1" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Player Tank" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="2" static="false">
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="17" fixedrot="true" fric="0.2" gid="3" id="1" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Player Tank" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="2" static="false">
         <snippets>
             <s enabled="true" id="5">
                 <prop id="2147483647" list="0" val="thisactor"/>
