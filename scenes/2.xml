@@ -11,8 +11,9 @@
     <terrainRegions/>
     <actors>
         <actor a="0.0" aid="1" c="false" group="3" id="19" name="Menu_Title 1" order="0" sx="1.0" sy="1.0" x="160" y="-128" z="2"/>
-        <actor a="0.0" aid="2" c="false" group="3" id="21" name="B_Play 2" order="1" sx="1.0" sy="1.0" x="640" y="224" z="2"/>
-        <actor a="0.0" aid="3" c="false" group="3" id="23" name="B_Quit 3" order="2" sx="1.0" sy="1.0" x="-256" y="320" z="2"/>
+        <actor a="0.0" aid="2" c="false" group="3" id="21" name="B_Play 2" order="1" sx="1.0" sy="1.0" x="640" y="256" z="2"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="23" name="B_Quit 3" order="2" sx="1.0" sy="1.0" x="-256" y="352" z="2"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="36" name="Alien Saucer 2 4" order="3" sx="1.0" sy="1.0" x="640" y="0" z="2"/>
     </actors>
     <snippets/>
     <terrain/>

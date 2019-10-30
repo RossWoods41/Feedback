@@ -7,7 +7,7 @@
                     <ACTOR eid="1" id="0"/>
                     <int id="1" val="1"/>
                     <int id="2" val="160"/>
-                    <int id="3" val="64"/>
+                    <int id="3" val="96"/>
                     <int id="4" val="2.25"/>
                     <int id="5" val="3"/>
                 </moveToBy>
@@ -15,7 +15,7 @@
                     <ACTOR eid="2" id="0"/>
                     <int id="1" val="1"/>
                     <int id="2" val="192"/>
-                    <int id="3" val="224"/>
+                    <int id="3" val="256"/>
                     <int id="4" val="2.25"/>
                     <int id="5" val="3"/>
                 </moveToBy>
@@ -23,12 +23,58 @@
                     <ACTOR eid="3" id="0"/>
                     <int id="1" val="1"/>
                     <int id="2" val="192"/>
-                    <int id="3" val="320"/>
+                    <int id="3" val="352"/>
                     <int id="4" val="2.25"/>
                     <int id="5" val="3"/>
                 </moveToBy>
+                <set-val-13-1 comment="false" x="28" y="131">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-13-1>
             </group>
         </init>
     </group>
     <group eventID="1" id="-1"/>
+    <group eventID="4" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="4" id="-1">
+                        <moveToBy comment="false" x="37" y="72">
+                            <ACTOR eid="4" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="-64"/>
+                            <int id="3" val="0"/>
+                            <int id="4" val="3"/>
+                            <int id="5" val="7"/>
+                        </moveToBy>
+                        <set-val-13-1 comment="false" x="37" y="99">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-13-1>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-13-1 comment="false" id="0" x="0" y="0"/>
+                        <true comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+                <else comment="false" x="26" y="136">
+                    <group eventID="4" id="-1">
+                        <moveToBy comment="false" x="37" y="156">
+                            <ACTOR eid="4" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="640"/>
+                            <int id="3" val="0"/>
+                            <int id="4" val="3"/>
+                            <int id="5" val="7"/>
+                        </moveToBy>
+                        <set-val-13-1 comment="false" x="37" y="183">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-13-1>
+                    </group>
+                </else>
+            </group>
+            <int id="0" val="5"/>
+            <ACTOR eid="lastcreated" id="2"/>
+        </event-periodic>
+    </group>
+    <group eventID="4" id="-1"/>
 </groups>
