@@ -7,10 +7,10 @@
 </pages>
 <chars count="64">
 <char id="32" x="0" y="0" width="0" height="0" xoffset="0" yoffset="23" xadvance="3" page="0" chnl="0"/>
-<char character="0" id="48" x="0" y="668" width="96" height="105" xoffset="0" yoffset="0" padding="0" xadvance="96" page="0" chnl="0"/>
+<char character="0" id="48" x="0" y="669" width="96" height="105" xoffset="0" yoffset="0" padding="0" xadvance="96" page="0" chnl="0"/>
 <char character="1" id="49" x="96" y="668" width="95" height="105" xoffset="0" yoffset="0" padding="0" xadvance="95" page="0" chnl="0"/>
-<char character="2" id="50" x="191" y="668" width="95" height="105" xoffset="0" yoffset="0" padding="0" xadvance="95" page="0" chnl="0"/>
-<char character="3" id="51" x="286" y="668" width="95" height="105" xoffset="0" yoffset="0" padding="0" xadvance="95" page="0" chnl="0"/>
+<char character="2" id="50" x="192" y="668" width="95" height="105" xoffset="0" yoffset="0" padding="0" xadvance="95" page="0" chnl="0"/>
+<char character="3" id="51" x="287" y="668" width="95" height="105" xoffset="0" yoffset="0" padding="0" xadvance="95" page="0" chnl="0"/>
 <char character="4" id="52" x="381" y="668" width="95" height="105" xoffset="0" yoffset="0" padding="0" xadvance="95" page="0" chnl="0"/>
 <char character="5" id="53" x="476" y="668" width="95" height="105" xoffset="0" yoffset="0" padding="0" xadvance="95" page="0" chnl="0"/>
 <char character="6" id="54" x="571" y="668" width="95" height="105" xoffset="0" yoffset="0" padding="0" xadvance="95" page="0" chnl="0"/>
@@ -18,7 +18,7 @@
 <char character="8" id="56" x="761" y="668" width="95" height="105" xoffset="0" yoffset="0" padding="0" xadvance="95" page="0" chnl="0"/>
 <char character="9" id="57" x="1" y="772" width="95" height="105" xoffset="0" yoffset="0" padding="0" xadvance="95" page="0" chnl="0"/>
 <char character=":" id="58" x="383" y="772" width="95" height="105" xoffset="0" yoffset="0" padding="0" xadvance="95" page="0" chnl="0"/>
-<char character="A" id="65" x="0" y="0" width="96" height="105" xoffset="0" yoffset="0" padding="0" xadvance="96" page="0" chnl="0"/>
+<char character="A" id="65" x="0" y="0" width="96" height="104" xoffset="0" yoffset="0" padding="0" xadvance="96" page="0" chnl="0"/>
 <char character="B" id="66" x="96" y="0" width="96" height="105" xoffset="0" yoffset="0" padding="0" xadvance="96" page="0" chnl="0"/>
 <char character="C" id="67" x="192" y="0" width="96" height="105" xoffset="0" yoffset="0" padding="0" xadvance="96" page="0" chnl="0"/>
 <char character="D" id="68" x="288" y="0" width="96" height="105" xoffset="0" yoffset="0" padding="0" xadvance="96" page="0" chnl="0"/>
@@ -41,7 +41,7 @@
 <char character="U" id="85" x="191" y="210" width="95" height="105" xoffset="0" yoffset="0" padding="0" xadvance="95" page="0" chnl="0"/>
 <char character="V" id="86" x="286" y="210" width="95" height="105" xoffset="0" yoffset="0" padding="0" xadvance="95" page="0" chnl="0"/>
 <char character="W" id="87" x="381" y="210" width="95" height="105" xoffset="0" yoffset="0" padding="0" xadvance="95" page="0" chnl="0"/>
-<char character="X" id="88" x="476" y="210" width="95" height="105" xoffset="0" yoffset="0" padding="0" xadvance="95" page="0" chnl="0"/>
+<char character="X" id="88" x="477" y="210" width="95" height="105" xoffset="0" yoffset="0" padding="0" xadvance="95" page="0" chnl="0"/>
 <char character="Y" id="89" x="571" y="210" width="95" height="105" xoffset="0" yoffset="0" padding="0" xadvance="95" page="0" chnl="0"/>
 <char character="Z" id="90" x="666" y="210" width="95" height="105" xoffset="0" yoffset="0" padding="0" xadvance="95" page="0" chnl="0"/>
 <char character="a" id="97" x="0" y="334" width="96" height="105" xoffset="0" yoffset="0" padding="0" xadvance="96" page="0" chnl="0"/>

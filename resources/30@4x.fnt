@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<font>
+<info zoom="1.0" lspace="0" space="12" line="104" bg="-13421773" face="0" size="16" bold="0" italic="0" charset="" unicode="0" stretchH="100" smooth="1" aa="1" padding="0,0,0,0" spacing="1,1"/>
+<common lineHeight="104" base="26" scaleW="4096" scaleH="4096" pages="1" packed="0"/>
+<pages>
+<page id="0" file="font-30.png"/>
+</pages>
+<chars count="2">
+<char id="32" x="0" y="0" width="0" height="0" xoffset="0" yoffset="23" xadvance="12" page="0" chnl="0"/>
+<char character="H" id="72" x="2472" y="8" width="32" height="32" xoffset="0" yoffset="0" padding="0" xadvance="32" page="0" chnl="0"/>
+</chars>
+</font>
