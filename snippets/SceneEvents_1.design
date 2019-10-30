@@ -32,29 +32,29 @@
         <draw comment="false" x="15" y="15">
             <group eventID="3" id="-1">
                 <set-font-new comment="false" x="26" y="40">
-                    <font eid="31" id="0"/>
+                    <font eid="33" id="0"/>
                 </set-font-new>
                 <set-stroke-color comment="false" x="26" y="67">
                     <color b="0" g="0" id="0" r="0"/>
                 </set-stroke-color>
-                <draw-text comment="false" x="26" y="94">
-                    <int id="0" val="Health:"/>
-                    <int id="1" val="10"/>
-                    <int id="2" val="450"/>
-                </draw-text>
-                <draw-text comment="false" x="26" y="114">
-                    <int id="0" val="Score:"/>
-                    <int id="1" val="515"/>
-                    <int id="2" val="450"/>
-                </draw-text>
-                <draw-text comment="false" x="26" y="134">
-                    <get-game-val-4 comment="false" id="0" x="0" y="0"/>
-                    <int id="1" val="585"/>
-                    <int id="2" val="450"/>
-                </draw-text>
-                <set-drawing-layer-actor comment="false" x="26" y="159">
-                    <ACTOR eid="1" id="0"/>
+                <set-drawing-layer-actor comment="false" x="26" y="94">
+                    <ACTOR eid="33" id="0"/>
                 </set-drawing-layer-actor>
+                <draw-text comment="false" x="26" y="121">
+                    <int id="0" val="Health:"/>
+                    <int id="1" val="5"/>
+                    <int id="2" val="460"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="141">
+                    <int id="0" val="Score:"/>
+                    <int id="1" val="510"/>
+                    <int id="2" val="460"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="161">
+                    <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="605"/>
+                    <int id="2" val="460"/>
+                </draw-text>
             </group>
         </draw>
     </group>

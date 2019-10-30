@@ -39,15 +39,11 @@
     <group eventID="3" id="0">
         <event-mouse-enter-exit-actor comment="false" x="12" y="29">
             <group eventID="3" id="-1">
-                <scene-change-color comment="false" x="23" y="56">
-                    <scene eid="1" id="0"/>
-                    <int id="1" val="0"/>
-                    <int id="2" val="1"/>
-                    <color b="0" g="0" id="3" r="0"/>
-                    <int id="4" val="0"/>
-                    <int id="5" val="1"/>
-                    <color b="0" g="0" id="6" r="0"/>
-                </scene-change-color>
+                <scene-change-through comment="false" x="23" y="56">
+                    <scene eid="3" id="0"/>
+                    <int id="1" val="3"/>
+                    <int id="2" val="1.25"/>
+                </scene-change-through>
             </group>
             <ACTOR eid="this" id="0"/>
             <int id="1" val="2"/>
