@@ -99,6 +99,7 @@ class ActorEvents_21 extends ActorScript
 		{
 			if(wrapper.enabled && 3 == mouseState)
 			{
+				playSound(getSound(38));
 				switchScene(GameModel.get().scenes.get(3).getID(), null, createSlideLeftTransition(1.25));
 			}
 		});

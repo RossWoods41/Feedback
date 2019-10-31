@@ -3,7 +3,11 @@
     <group eventID="1" id="0">
         <init comment="false" x="17" y="25">
             <group eventID="1" id="-1">
-                <moveToBy comment="false" x="28" y="50">
+                <play-sound4 comment="false" x="28" y="50">
+                    <int id="0" val="1"/>
+                    <sound eid="39" id="1"/>
+                </play-sound4>
+                <moveToBy comment="false" x="28" y="77">
                     <ACTOR eid="1" id="0"/>
                     <int id="1" val="1"/>
                     <int id="2" val="160"/>
@@ -11,7 +15,7 @@
                     <int id="4" val="2.25"/>
                     <int id="5" val="3"/>
                 </moveToBy>
-                <moveToBy comment="false" x="28" y="77">
+                <moveToBy comment="false" x="28" y="104">
                     <ACTOR eid="2" id="0"/>
                     <int id="1" val="1"/>
                     <int id="2" val="192"/>
@@ -19,7 +23,7 @@
                     <int id="4" val="2.25"/>
                     <int id="5" val="3"/>
                 </moveToBy>
-                <moveToBy comment="false" x="28" y="104">
+                <moveToBy comment="false" x="28" y="131">
                     <ACTOR eid="3" id="0"/>
                     <int id="1" val="1"/>
                     <int id="2" val="192"/>
@@ -27,7 +31,7 @@
                     <int id="4" val="2.25"/>
                     <int id="5" val="3"/>
                 </moveToBy>
-                <set-val-13-1 comment="false" x="28" y="131">
+                <set-val-13-1 comment="false" x="28" y="158">
                     <true comment="false" id="0" x="0" y="0"/>
                 </set-val-13-1>
             </group>
@@ -44,10 +48,14 @@
                             <int id="1" val="1"/>
                             <int id="2" val="-64"/>
                             <int id="3" val="0"/>
-                            <int id="4" val="3"/>
+                            <int id="4" val="7"/>
                             <int id="5" val="7"/>
                         </moveToBy>
-                        <set-val-13-1 comment="false" x="37" y="99">
+                        <play-sound4 comment="false" x="37" y="99">
+                            <int id="0" val="0"/>
+                            <sound eid="40" id="1"/>
+                        </play-sound4>
+                        <set-val-13-1 comment="false" x="37" y="126">
                             <false comment="false" id="0" x="0" y="0"/>
                         </set-val-13-1>
                     </group>
@@ -56,23 +64,27 @@
                         <true comment="false" id="1" x="0" y="0"/>
                     </eq>
                 </if>
-                <else comment="false" x="26" y="136">
+                <else comment="false" x="26" y="163">
                     <group eventID="4" id="-1">
-                        <moveToBy comment="false" x="37" y="156">
+                        <moveToBy comment="false" x="37" y="183">
                             <ACTOR eid="4" id="0"/>
                             <int id="1" val="1"/>
                             <int id="2" val="640"/>
                             <int id="3" val="0"/>
-                            <int id="4" val="3"/>
+                            <int id="4" val="7"/>
                             <int id="5" val="7"/>
                         </moveToBy>
-                        <set-val-13-1 comment="false" x="37" y="183">
+                        <play-sound4 comment="false" x="37" y="210">
+                            <int id="0" val="0"/>
+                            <sound eid="40" id="1"/>
+                        </play-sound4>
+                        <set-val-13-1 comment="false" x="37" y="237">
                             <true comment="false" id="0" x="0" y="0"/>
                         </set-val-13-1>
                     </group>
                 </else>
             </group>
-            <int id="0" val="5"/>
+            <int id="0" val="10"/>
             <ACTOR eid="lastcreated" id="2"/>
         </event-periodic>
     </group>

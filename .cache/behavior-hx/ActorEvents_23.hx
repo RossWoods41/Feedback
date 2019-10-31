@@ -99,6 +99,7 @@ class ActorEvents_23 extends ActorScript
 		{
 			if(wrapper.enabled && 3 == mouseState)
 			{
+				playSound(getSound(38));
 				exitGame();
 			}
 		});
